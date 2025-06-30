@@ -1,2 +1,14 @@
-with open("requirements.txt", "w") as f:
-    f.write("flask\ntensorflow==2.10.0\nnumpy\npandas")
+# Correct content for requirements.txt
+requirements_content = """flask
+tensorflow==2.10.0
+numpy
+pandas
+"""
+
+# Write the correct content to the requirements.txt file in the cloned repository
+with open('quotex- backend/requirements.txt', 'w') as f:
+    f.write(requirements_content)
+
+print("Corrected requirements.txt file content:")
+with open('quotex- backend/requirements.txt', 'r') as f:
+    print(f.read())
